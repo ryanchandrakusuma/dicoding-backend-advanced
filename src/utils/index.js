@@ -1,4 +1,7 @@
-const mapDBToModel = ({id, title, body, tags, created_at, updated_at}) => ({
+const mapDBToModel = ({
+  // eslint-disable-next-line camelcase
+  id, title, body, tags, created_at, updated_at,
+}) => ({
   id,
   title,
   body,
@@ -7,4 +10,4 @@ const mapDBToModel = ({id, title, body, tags, created_at, updated_at}) => ({
   updatedAt: updated_at,
 });
 
-module.exports = {mapDBToModel};
+module.exports = { mapDBToModel };
